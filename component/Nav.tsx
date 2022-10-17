@@ -19,9 +19,7 @@ function Nav() {
 
         <Text style={styles.Recom}>Recomendations</Text>
 
-        {/* Hola esto es un comentarios
-
-           fin del comentario  */}
+        {/*2DA PARTE*/}
 
         <View style={styles.container}>
           <View style={styles.contenedorImg}>
@@ -33,6 +31,7 @@ function Nav() {
             />
           </View>
           <View style={styles.subcontainer}>
+            <View></View>
             <Text style={styles.title}>UI/UX Desiner</Text>
             <Text style={styles.subTitle}>Google LLC</Text>
           </View>
@@ -51,9 +50,8 @@ function Nav() {
           </View>
         </View>
 
-        {/* Hola esto es un comentarios
+        {/*1ERA PARTE SIGUIENTE*/}
 
-           fin del comentario  */}
       </View>
       <View style={styles.nav}>
         <AntDesign name="arrowleft" style={styles.icon} />
@@ -90,7 +88,7 @@ const styles = StyleSheet.create({
   },
 
   subcontainer: {
-    margin: 12,
+    margin: 10,
   },
 
   title: {
@@ -103,7 +101,7 @@ const styles = StyleSheet.create({
   },
   options: {
     flex: 1,
-    
+
     borderRadius: 10,
     backgroundColor: "#FFF",
     alignItems: "center",
@@ -161,7 +159,7 @@ const styles = StyleSheet.create({
 
   Container2: {
     marginTop: 50,
-    borderWidth: 1,
+    marginLeft: -270,
   },
   secondTitle: {
     color: "#616161",

@@ -1,10 +1,14 @@
 import { View, Image, Text, StyleSheet, ScrollView } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
+import { Ionicons, AntDesign } from "@expo/vector-icons";
+import { Entypo } from "@expo/vector-icons";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 function Container() {
   return (
     <ScrollView>
-      <View style={style.principal}>
+      {/* PRIMER CAMPO  */}
+
+      <View style={style.container0}>
         <View style={style.container}>
           <View style={style.contenedorImg}>
             <Image
@@ -34,8 +38,9 @@ function Container() {
         </View>
       </View>
 
-      {/*Campos */}
-      <View style={style.principal}>
+      {/*SEGUNDO CAMPO*/}
+
+      <View style={style.container0}>
         <View style={style.container}>
           <View style={style.contenedorImg}>
             <Image
@@ -64,8 +69,10 @@ function Container() {
           </View>
         </View>
       </View>
-      {/* Campos */}
-      <View style={style.principal}>
+
+      {/* TERCER CAMPO */}
+
+      <View style={style.container0}>
         <View style={style.container}>
           <View style={style.contenedorImg}>
             <Image
@@ -94,12 +101,106 @@ function Container() {
           </View>
         </View>
       </View>
-      {/* Campos */}
+
+      {/* CUARTO CAMPO*/}
+
+      <View style={style.container0}>
+        <View style={style.container}>
+          <View style={style.contenedorImg}>
+            <Image
+              style={style.img}
+              source={{
+                uri: "https://cdn.icon-icons.com/icons2/836/PNG/512/Spotify_icon-icons.com_66783.png",
+              }}
+            />
+          </View>
+          <View style={style.subcontainer}>
+            <Text style={style.title}>Quality Assurance</Text>
+            <Text style={style.subTitle}>Spotify.</Text>
+          </View>
+          <View style={style.options}>
+            <Ionicons name="bookmark-outline" style={style.icon1} />
+          </View>
+        </View>
+
+        <View style={style.Container2}>
+          <Text style={style.secondTitle}>Camberra, Australia</Text>
+          <Text style={style.money}>$12,000 - $25,000 /month </Text>
+
+          <View style={style.btn}>
+            <Text style={style.button}>Full Time</Text>
+            <Text style={style.button}>Remote</Text>
+          </View>
+        </View>
+
+        {/*  QUINTO CAMPO */}
+
+        <View style={style.container0}>
+          <View style={style.container}>
+            <View style={style.contenedorImg}>
+              <Image
+                style={style.img}
+                source={{
+                  uri: "https://cdn-icons-png.flaticon.com/512/3670/3670226.png",
+                }}
+              />
+            </View>
+            <View style={style.subcontainer}>
+              <Text style={style.title}>Community Officer</Text>
+              <Text style={style.subTitle}>Reddit Company</Text>
+            </View>
+            <View style={style.options}>
+              <Ionicons name="bookmark" style={style.icon1} />
+            </View>
+          </View>
+        </View>
+
+        <View style={style.footer}>
+          <View>
+            <Entypo name="home" style={style.icon2} />
+          </View>
+
+          <View>
+            <MaterialCommunityIcons
+              name="bookmark-minus-outline"
+              style={style.icon3}
+            />
+          </View>
+
+          <View>
+            <AntDesign name="appstore-o" style={style.icon3} />
+          </View>
+
+          <View>
+            <AntDesign name="message1" style={style.icon3} />
+          </View>
+
+          <View>
+            <AntDesign name="user" style={style.icon3} />
+          </View>
+        </View>
+      </View>
     </ScrollView>
   );
 }
 const style = StyleSheet.create({
-  principal: {
+  footer: {
+    flexDirection: "row",
+    },
+
+  icon2: {
+    color: "#1976D2",
+    fontSize: 30,
+    margin: 20,
+  },
+
+  icon3: {
+    color: "#000000",
+    fontSize: 30,
+    margin: 20,
+  },
+
+  container0: {
     margin: 5,
     borderWidth: 1,
     borderRadius: 25,
